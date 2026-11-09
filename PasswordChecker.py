@@ -1,4 +1,5 @@
 # Password checking program for CI/CD pipeline testing
+# python tests to check if the password checks works properly.
 
 def check_password(password):
     if len(password) < 10:
