@@ -5,6 +5,9 @@ def check_password(password):
     if len(password) < 10:
         return False
 
+    if any(char.isspace() for char in password):
+        return False
+
     if not any(char.isupper() for char in password):
         return False
 
