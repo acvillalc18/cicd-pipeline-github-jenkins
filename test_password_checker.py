@@ -18,7 +18,9 @@ class PasswordCheckerTesting(unittest.TestCase):
 
     def test_no_special_characters(self):
         self.assertFalse(check_password("HelloWorld123"))
-
+    
+    def test_no_lowercase(self):
+	self.assertFalse(check_password("HELLOWORLD123!"))
 
 if __name__ == "__main__":
     unittest.main()
